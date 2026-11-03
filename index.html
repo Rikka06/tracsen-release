@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>拓迹 · Tracsen</title>
+<style>
+  :root{
+    --bg:#F2F2F7; --card:#FFFFFF; --ink:#1C1C1E; --ink2:#8E8E93;
+    --ink3:#AEAEB2; --blue:#007AFF; --green:#34C759;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    margin:0;min-height:100vh;
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro SC","PingFang SC",
+         "Segoe UI","Microsoft YaHei",sans-serif;
+    color:var(--ink);background:var(--bg);
+    display:flex;flex-direction:column;align-items:center;
+    padding:56px 20px 40px;
+  }
+  .halo{
+    position:fixed;top:0;left:0;right:0;height:320px;pointer-events:none;
+    background:linear-gradient(180deg,#FFA8CE22 0%,#D9A8FF12 45%,#F2F2F700 100%);
+  }
+  .wrap{position:relative;width:100%;max-width:420px}
+  .icon{
+    width:88px;height:88px;margin:0 auto 22px;border-radius:24px;
+    background:linear-gradient(135deg,#FFB3D9,#B79CFF);
+    box-shadow:0 10px 34px rgba(180,120,220,.28);
+    display:flex;align-items:center;justify-content:center;
+    font-size:38px;
+  }
+  h1{font-size:26px;font-weight:700;text-align:center;margin:0 0 8px}
+  .sub{font-size:13px;color:var(--ink2);text-align:center;margin:0 0 26px}
+  .card{
+    background:var(--card);border-radius:26px;padding:20px 20px 22px;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);margin-bottom:14px;
+  }
+  .btn{
+    display:flex;align-items:center;justify-content:center;
+    height:54px;border-radius:999px;background:var(--blue);color:#fff;
+    font-size:16px;font-weight:600;text-decoration:none;
+    transition:transform .12s ease,opacity .12s;
+  }
+  .btn:active{transform:scale(.98);opacity:.9}
+  .meta{
+    display:flex;justify-content:center;gap:22px;
+    margin-top:16px;font-size:12px;color:var(--ink3);
+  }
+  .meta b{display:block;color:var(--ink2);font-weight:600;font-size:13px;
+    text-align:center;margin-top:2px}
+  h2{font-size:13px;font-weight:600;color:var(--ink2);
+    margin:0 0 12px;letter-spacing:.02em}
+  ol{margin:0;padding-left:20px;font-size:14px;color:var(--ink2);line-height:1.9}
+  ol b{color:var(--ink);font-weight:500}
+  .foot{font-size:12px;color:var(--ink3);text-align:center;margin-top:22px}
+  .foot a{color:var(--blue);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="halo"></div>
+<div class="wrap">
+
+  <div class="icon">🏃</div>
+  <h1>拓迹 · Tracsen</h1>
+  <p class="sub">记录生成 · 直传同步</p>
+
+  <div class="card">
+    <a class="btn" href="https://github.com/Rikka06/tracsen-release/releases/download/v1.0.0/Tracsen-1.0.0.apk">下载安装包</a>
+    <div class="meta">
+      <div>版本<b>1.0.0</b></div>
+      <div>大小<b>37.9 MB</b></div>
+      <div>系统<b>Android 6.0+</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>安装说明</h2>
+    <ol>
+      <li>点上方按钮下载 <b>APK</b></li>
+      <li>浏览器提示时选择 <b>允许安装未知应用</b></li>
+      <li>安装后打开，输入卡密完成激活</li>
+    </ol>
+  </div>
+
+  <p class="foot">遇到问题请点 App 内「获取帮助」<br>
+     <a href="https://github.com/Rikka06/tracsen-release/releases">查看所有版本</a></p>
+
+</div>
+</body>
+</html>
